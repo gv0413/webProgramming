@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dd</title>
+        <script>
+            var date = new Date();
+
+            var year = date.getFullYear();
+            var month = date.getMonth();
+            var day = date.getDay();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+
+            if(hours < 5){
+                alert('잠을 자렴..');
+            }else if (hours<7){
+                alert('준비');
+            }else if(hours<9) {
+                alert('출근');
+            } else if(hous<12) {
+                alert('빈둥빈둥');
+            } else if(hours < 14) {
+                alert('식사');
+            } else {
+                //여러가지 업무 수행합니다.
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

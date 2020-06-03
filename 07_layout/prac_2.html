@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>연습문제 2번</title>
+    <style>
+        .container {
+            width: 1080px;
+            overflow: hidden; 
+            /* 중요!! */
+            margin: 0 auto 8px auto;
+        }
+        .left{
+            float: left;
+            width: 740px;
+            height: 428px;
+            background-color: red;
+        }
+        .right {
+            float: right;
+            width: 332px;
+            height: 428px;
+            background-color: blue;
+        }
+        ul.gnb {
+            float: left;
+            padding: 8px 0;
+            background-color: green;
+        }
+        ul.gnb > li {
+            list-style-type: none;
+            float: left;
+            padding-left: 16px;
+        }
+        ul.gnb > li:first-child {
+            padding-left: 0;
+        }
+        ul.rank {
+            float: right;
+            padding: 8px 0;
+            background-color: yellow;
+        }
+        ul.rank > li {
+            list-style-type: none;
+        }
+        div.footer {
+            height: 80px;
+            background-color: purple;
+        }
+    </style>
+</head> 
+<body>
+    <div class="container">
+        <h1>Logo</h1>
+    </div>
+    <div class="container">
+        <ul class="gnb">
+            <li>메일</li>
+            <li>카페</li>
+            <li>블로그</li>
+            <li>쇼핑</li>
+            <li>사진</li>
+            <li>뉴스</li>
+            <li>증권</li>
+            <li>부동산</li>
+            <li>지도</li>
+        </ul>
+        <ul class="rank">
+            <li>실시간 검색 순위</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="container">
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
