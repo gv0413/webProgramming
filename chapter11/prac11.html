@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>11번</title>
+</head>
+<body>
+  <div class="drawer">
+    <h1>Logo</h1>
+    <div class="drawer-menu">
+      <p>Esse pariatur</p>
+    </div>
+  </div>
+  <div class="content">
+    <h1>Lorem ipsum</h1>
+    <p>adsasadasdd dsdsa as</p>
+    <p>adsasadasdd dsdsa as</p>
+    <p>adsasadasdd dsdsa as</p>
+    <p>adsasadasdd dsdsa as</p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+	<style>
+    * {
+      margin:0;
+      padding: 0;
+    }
+    p {
+      margin: 10px 0;
+    }
+    .drawer {
+      position: fixed;
+      width: 100%;
+      text-align: center;
+      color: white;
+      background-color: red;
+    }
+    .drawer h1 {
+      height: 50px;
+      line-height: 50px;
+    }
+    .drawer-menu {
+      display: none;
+    }
+    .content {
+      padding: 10px;
+      padding-top: 60px;
+    }
+	</style>
+	<script>
+    $('body').click(function () {
+      $('.drawer-menu').slideToggle('slow')
+    })
+	</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>infinity scroll</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+      $(document).ready( function() {
+        var appendDocument = function() {
+          for(var i =0; i<20; i++) {
+            $('<h1>Infinity Scroll</h1>').appendTo('body');
+          }
+        };
+
+        appendDocument();
+
+        $(window).scroll(function () {
+          var scrollHeight = $(window).scrollTop() + $(window).height();
+          var documentHeight = $(document).height();
+
+          if(scrollHeight == documentHeight) {
+            appendDocument();
+            alert(scrollHeight+','+documentHeight);
+          }
+          
+        });
+        
+      });
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery basic</title>
+        <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+        <script>
+          $(document).ready(function (){
+            $('img').attr( {
+              alt: 'jQuery 라이브러리를 사용한 속성 지정',
+              src : function (index) {
+                var size = (index + 1) * 100;
+
+                return 'http://placehold.it/' + size + 'x100';
+              }
+            });
+          });
+        </script>
+    </head>
+    <body>
+      <!-- index 0 -->
+      <img /> 
+      <!-- index 1 -->
+      <img />
+      <!-- index 2 -->
+      <img />
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Traditional Event - Default Event</title>
+        <!-- 방법 1 : onload 사용한다 -->
+        <script>
+          window.onload = function () {
+            var element = document.getElementById('element');
+            element.style.color = 'red';
+            element.innerHTML = 'From JS'
+          }
+        </script>
+    </head>
+    <body>
+      <h1 id="element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eligendi ut maiores ducimus, impedit molestiae omnis excepturi cupiditate saepe voluptas tenetur voluptatibus placeat pariatur delectus quidem amet quaerat sed perspiciatis.</h1>
+      <!-- 방법 2 : body 안에 script 넣는다
+      <script>
+          var element = document.getElementById('element');
+          element.style.color = 'red';
+          element.innerHTML = 'From JS'
+      </script> -->
+    </body>
+</html>

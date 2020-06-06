@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery basic</title>
+        <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+        <script>
+          $(document).ready(function () {
+            var output = '';
+            for(var i=0; i<256; i++) {
+              output += '<div></div>'
+            }
+            document.body.innerHTML = output;
+
+            $('div').css({
+              height: 2,
+              backgroundColor : function(i){
+                return 'rgb(' + i + ',' + i + ',' + i + ')';
+                rgb(1,1,1);
+              }
+            });
+          });
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
