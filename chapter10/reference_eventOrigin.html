@@ -6,9 +6,11 @@
     <body>
       <button id="button">버튼 - </button>
       <script>
-        document.getElementById("button").onclick = function () {
+        document.getElementById("button").onclick = function (e) {
           this.textContent = this.textContent + '*';
+          console.log(e)
         }
+        
       </script>
     </body>
 </html>

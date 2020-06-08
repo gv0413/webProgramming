@@ -6,9 +6,9 @@
     <script>
         $(document).ready(function () {
             // 변수를 선언합니다.
-            var text = $('h1').text();
-            var html = $('h1').html();
-
+            var text = $('h1').text(); //전체
+            var html = $('h1').html(); //처음꺼만
+            $('h1').html('<a>aaa</a>')
             // 출력합니다.
             alert("text: " + text);
             alert("html: " + html)

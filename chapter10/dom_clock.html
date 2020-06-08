@@ -3,14 +3,23 @@
     <head>
         <title>DOM Basic</title>
         <script>
-            window.onload = function() {
-               var clock = document.getElementById('clock');
+            // window.onload = function() {
+            //    var clock = document.getElementById('clock');
                 
-                //1초마다 출력
-               setInterval(function () {
-                   var now = new Date();
-                   clock.innerHTML = now.toString();
-               }, 1000);
+            //     //1초마다 출력
+            //    setInterval(function () {
+            //        var now = new Date();
+            //        clock.innerHTML = now.toString();
+            //    }, 1000);
+            // };
+
+            window.onload = function () {
+                var clock = document.getElementById('clock');
+
+                setInterval(function () {
+                    var now = new Date();
+                    clock.innerHTML = now.toString();
+                },1000);
             };
         </script>
     </head>

@@ -17,9 +17,9 @@
           var scrollHeight = $(window).scrollTop() + $(window).height();
           var documentHeight = $(document).height();
 
-          if(scrollHeight == documentHeight) {
+          if(scrollHeight == parseInt(documentHeight)) {
             appendDocument();
-            alert(scrollHeight+','+documentHeight);
+            // alert(scrollHeight+','+documentHeight);
           }
           
         });

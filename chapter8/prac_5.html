@@ -4,7 +4,7 @@
         <title>Document</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            *{
+            /* *{
                 margin: 0;
                 padding : 0;
             }
@@ -33,6 +33,34 @@
                 .right {
                     float: right;
                     width: 70%;
+                }
+            } */
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            li{
+                list-style: none;
+                padding: 15px 0;
+                border-bottom: 1px solid #cecece;
+            }
+            .content {
+                padding:16px;
+            }
+            @media screen and (orientation: portrait) {
+                .left {
+                    display: none;
+                }
+            }
+            @media screen and (orientation: landscape) {
+                .left {
+                    float: left;
+                    width: 30%;
+                }
+                .right {
+                    float: right;
+                    width:70%;
                 }
             }
         </style>
