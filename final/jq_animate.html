@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .header{
+      position: fixed;
+      width: 100%;
+      background-color: red;
+      text-align: center;
+    }
+    .title {
+      line-height: 50px;
+      height: 50px;
+    }
+    .hide{
+      display: none;
+    }
+    .content{
+      padding-top: 60px;
+    }
+  </style>
+  <script>
+    $(document).ready(function() {
+      // $('.header').on('click',function() {
+      //   $('.hide').slideToggle('slow')
+      // })
+      // $('.header').click(function() {
+      //   $('.hide').slideToggle('slow')
+      // })
+
+      $('body').click(function () {
+        $('.hide').slideToggle('slow')
+      })
+    })
+  </script>
+</head>
+<body>
+  <div class="header">
+    <h1 class="title">Logo</h1>
+    <p class="hide">까꿍</p>
+  </div>
+  <div class="content">
+    <h1>lorem ipsum</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, corporis non ipsa dolor cupiditate laborum enim ut, necessitatibus amet nesciunt ducimus quisquam quae aut similique ratione sint dolores? Doloremque, modi!</p>
+  </div>
+</body>
+</html>

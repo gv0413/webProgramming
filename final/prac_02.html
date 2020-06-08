@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+	<script>
+    $(document).ready(function() {
+      $('tr:first-child').css({
+        background: 'black',
+        color: 'white'
+      })
+      for(var i=1; i<=4;i++){
+        if(i%2==0){
+          $(`tr:nth-child(${i})`).css('background', 'green');
+        }
+      }
+    })
+  </script>
+</head>
+<body>
+  <table border="1" width="50%">
+    <tr><td>이름</td><td>주소</td></tr>
+    <tr><td>홍길동</td><td>서울시</td></tr>
+    <tr><td>이순신</td><td>제주시</td></tr>
+    <tr><td>왕건</td><td>경기도</td></tr>
+  </table>
+</body>
+</html>

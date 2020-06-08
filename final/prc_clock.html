@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    window.onload = function() {
+      var clock = document.getElementById('clock')
+      setInterval(function () {
+        var now = new Date();
+        clock.innerHTML = now.toString();
+      })
+    }
+    
+  </script>
+</head>
+<body>
+  <h1 id="clock">a</h1>
+</body>
+</html>

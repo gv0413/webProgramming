@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+      $(document).ready(function() {
+        setTimeout(function() {
+          var value = $("select > option:selected").val();
+        })
+        $('select').change(function() {
+          alert('변경됨')
+          $(this).css('color', 'red')
+        })
+      })
+    </script>
+  </head>
+  
+  <body>
+
+    <script>
+      $(function() {
+        //1초 후에 코드를 실행합니다.
+        setTimeout(function() {
+          //변수를 선언합니다.
+          var value = $("select > option:selected").val(); 
+        //출력 합니다.
+        alert(value);
+        }, 1000);
+      });
+    </script>
+  
+    <select>
+      <option>apple</option>
+      <option>bag</option>
+      <option>cat</option>
+      <option>dog</option>
+      <option>elephant</option>
+    </select>
+  </body>
+</html>
